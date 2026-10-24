@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawRoute | Gentle Pet Grooming in Estonia</title>
+  <meta name="description" content="PawRoute is Estonia's premier pet grooming salon. Gentle, stress-free grooming for dogs and cats with transparent pricing in Euros.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Site Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Demo Banner -->
+  <div class="demo-top-bar" role="status">
+    <span>🐾 <strong>Demo Mode Active</strong> — This is an interactive preview website. Bookings submitted here are demonstrations only.</span>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-wrap" aria-label="Main Navigation">
+        <!-- Logo -->
+        <a href="#hero" class="logo">
+          <div class="logo-icon">🐾</div>
+          PawRoute<span>.ee</span>
+          <span class="location-badge">📍 <span class="header-location-text">Tallinn, Estonia</span></span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#services">Services & Pricing</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#why-us">Why PawRoute</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Location & Hours</a></li>
+        </ul>
+
+        <!-- Right Action Button -->
+        <a href="#booking" class="nav-cta-btn">Book Demo Appointment</a>
+
+        <!-- Mobile Toggle Button -->
+        <button type="button" class="mobile-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+          ☰
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Left Hero Content -->
+        <div class="hero-content">
+          <div class="hero-tag">🇪🇪 Estonia's Boutique Pet Spa</div>
+          <h1 class="hero-title">Where Every Paw Gets <em>Royal Care</em></h1>
+          <p class="hero-subtitle">
+            Patience-first, fear-free grooming for your dogs and cats. Located in central Tallinn with natural Nordic-safe products and certified pet stylists.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#booking" class="btn-primary">
+              <span>📅 Request Demo Booking</span>
+            </a>
+            <a href="#services" class="btn-secondary">
+              <span>View Packages & Prices</span>
+            </a>
+          </div>
+
+          <!-- Hero Highlights / Stats -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h4>1-on-1</h4>
+              <p>Personalized care</p>
+            </div>
+            <div class="stat-item">
+              <h4>100%</h4>
+              <p>Cruelty-free & gentle</p>
+            </div>
+            <div class="stat-item">
+              <h4>Tallinn</h4>
+              <p>Central location</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Card -->
+        <div class="hero-visual">
+          <div class="hero-visual-card">
+            <div class="salon-preview-header">
+              <div>
+                <h4 style="font-weight: 800; color: var(--color-primary); font-size: 1.15rem;">PawRoute Salon</h4>
+                <p style="font-size: 0.82rem; color: var(--text-muted);"><span class="js-salon-address">[Tornimäe 5, Kesklinn, Tallinn]</span></p>
+              </div>
+              <div class="salon-badge-status">Open Today</div>
+            </div>
+
+            <ul class="preview-features-list">
+              <li class="preview-feature-item">
+                <span class="preview-feature-icon">🌿</span>
+                <div class="preview-feature-text">
+                  <h5>Hypoallergenic Shampoos</h5>
+                  <p>Specially selected for Estonia's seasonal coat needs.</p>
+                </div>
+              </li>
+              <li class="preview-feature-item">
+                <span class="preview-feature-icon">✨</span>
+                <div class="preview-feature-text">
+                  <h5>Fear-Free Handling</h5>
+                  <p>Gentle acclimatization, warm water, and soothing breaks.</p>
+                </div>
+              </li>
+              <li class="preview-feature-item">
+                <span class="preview-feature-icon">✂️</span>
+                <div class="preview-feature-text">
+                  <h5>Custom Breed Styling</h5>
+                  <p>Precision hand-scissor cuts and tailored undercoat removal.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="quick-book-chip">
+              <p>⚡ Try the interactive booking request demo</p>
+              <a href="#booking" class="btn-chip">Go to Demo Form</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services & Pricing Section -->
+  <section class="section-pad" id="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Clear & Transparent</span>
+        <h2 class="section-title">Grooming Packages & Pricing</h2>
+        <p class="section-subtitle">
+          All prices are in <strong>Euros (€)</strong> with no hidden extras. Choose the perfect care package for your pet's coat and size.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="services-filter-bar">
+        <button type="button" class="filter-btn active" data-category="all">All Services</button>
+        <button type="button" class="filter-btn" data-category="dogs">Dogs Only 🐕</button>
+        <button type="button" class="filter-btn" data-category="cats">Cats Only 🐈</button>
+        <button type="button" class="filter-btn" data-category="addons">Add-Ons & Spa 🛁</button>
+      </div>
+
+      <!-- Dynamic Services Grid (populated by app.js from data/services.js) -->
+      <div class="services-grid" id="services-grid">
+        <!-- Rendered via JavaScript -->
+        <noscript>
+          <div class="service-card">
+            <h3>JavaScript Required</h3>
+            <p>Please enable JavaScript to view dynamic services, or edit <code>data/services.js</code>.</p>
+          </div>
+        </noscript>
+      </div>
+
+      <!-- Beginner Update Hint Box -->
+      <div class="update-tip-box">
+        <div class="update-tip-text">
+          💡 <strong>Want to change services or prices?</strong> Simply open <code>data/services.js</code> and edit the numbers or names in plain English. No code knowledge needed!
+        </div>
+        <a href="#faq" style="font-size: 0.85rem; font-weight: 700; color: var(--color-accent);">Learn how in FAQ →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="section-pad-alt" id="how-it-works">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Stress-Free Process</span>
+        <h2 class="section-title">How PawRoute Works</h2>
+        <p class="section-subtitle">
+          Three simple steps to keep your pet looking, feeling, and smelling their best.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-icon">📋</div>
+          <h3 class="step-title">Submit Request</h3>
+          <p class="step-desc">
+            Select your preferred grooming package and ideal date/time window using our straightforward online form.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-icon">🧼</div>
+          <h3 class="step-title">Gentle Spa Session</h3>
+          <p class="step-desc">
+            Bring your companion to our Tallinn salon. We conduct a personalized coat check and pamper them with patience.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-icon">🐾</div>
+          <h3 class="step-title">Happy Reunion</h3>
+          <p class="step-desc">
+            Receive an SMS pickup notification. Take home a relaxed, clean, and happy pet ready for cuddles!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Demo Booking Section -->
+  <section class="section-pad" id="booking">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Interactive Simulation</span>
+        <h2 class="section-title">Request an Appointment</h2>
+        <p class="section-subtitle">
+          Test our easy booking experience below. Select a service to see how convenient scheduling can be.
+        </p>
+      </div>
+
+      <div class="booking-section-wrapper">
+        <!-- Prominent Demo Notice Banner -->
+        <div class="booking-disclaimer-banner">
+          <div class="booking-disclaimer-icon">⚠️</div>
+          <div class="booking-disclaimer-text">
+            <h4>DEMO BOOKING MODE ONLY</h4>
+            <p>
+              This is a prototype form for review. <strong>No real customer data is saved</strong>, no payment is collected, and submitting will <strong>not</strong> schedule a live appointment.
+            </p>
+          </div>
+        </div>
+
+        <!-- Booking Form -->
+        <div class="booking-form-body">
+          <form id="demo-booking-form">
+            <div class="form-layout-grid">
+              
+              <!-- 1. Pet Species -->
+              <div class="form-group form-full-width">
+                <label>1. Pet Type <span class="hint">Select dog or cat</span></label>
+                <div class="species-selector">
+                  <label class="species-chip">
+                    <input type="radio" name="pet-species" value="Dog" checked>
+                    <span>🐕 Dog</span>
+                  </label>
+                  <label class="species-chip">
+                    <input type="radio" name="pet-species" value="Cat">
+                    <span>🐈 Cat</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- 2. Pet Name -->
+              <div class="form-group">
+                <label for="pet-name">2. Pet Name * <span class="hint">e.g. Muki, Bella</span></label>
+                <input type="text" id="pet-name" class="form-input" placeholder="e.g. Bella" required>
+              </div>
+
+              <!-- 3. Breed / Size -->
+              <div class="form-group">
+                <label for="pet-breed">3. Breed or Size <span class="hint">e.g. Golden Retriever, Small &lt; 10kg</span></label>
+                <input type="text" id="pet-breed" class="form-input" placeholder="e.g. French Bulldog (12kg)">
+              </div>
+
+              <!-- 4. Service Selection (Populated via JS) -->
+              <div class="form-group form-full-width">
+                <label for="booking-service">4. Select Grooming Service * <span class="hint">Prices shown in EUR (€)</span></label>
+                <select id="booking-service" class="form-select" required>
+                  <option value="">Loading services from data/services.js...</option>
+                </select>
+              </div>
+
+              <!-- 5. Preferred Date -->
+              <div class="form-group">
+                <label for="booking-date">5. Preferred Date * <span class="hint">Mon–Sat</span></label>
+                <input type="date" id="booking-date" class="form-input" required>
+              </div>
+
+              <!-- 6. Preferred Time Window -->
+              <div class="form-group">
+                <label for="booking-time">6. Preferred Time Window *</label>
+                <select id="booking-time" class="form-select" required>
+                  <option value="Morning (09:00 - 12:00)">Morning (09:00 – 12:00)</option>
+                  <option value="Afternoon (12:00 - 15:00)">Afternoon (12:00 – 15:00)</option>
+                  <option value="Late Afternoon (15:00 - 18:00)">Late Afternoon (15:00 – 18:00)</option>
+                  <option value="Flexible / Any Time">Flexible / Any time</option>
+                </select>
+              </div>
+
+              <!-- 7. Owner Name -->
+              <div class="form-group">
+                <label for="owner-name">7. Your Full Name *</label>
+                <input type="text" id="owner-name" class="form-input" placeholder="e.g. Laura Tamm" required>
+              </div>
+
+              <!-- 8. Owner Phone (Estonia Placeholder format) -->
+              <div class="form-group">
+                <label for="owner-phone">8. Phone Number * <span class="hint">Estonian format (+372)</span></label>
+                <input type="tel" id="owner-phone" class="form-input" placeholder="+372 5XXX XXXX" required>
+              </div>
+
+              <!-- 9. Special Notes -->
+              <div class="form-group form-full-width">
+                <label for="booking-notes">9. Special Care Notes <span class="hint">Matted hair, sensitive skin, nervous temperament, etc.</span></label>
+                <textarea id="booking-notes" class="form-textarea" placeholder="Tell us anything that will help make your pet comfortable..."></textarea>
+              </div>
+
+            </div>
+
+            <!-- Footer Actions -->
+            <div class="form-footer-actions">
+              <div class="form-security-note">
+                🔒 <span>Interactive demonstration — inputs reset upon receipt preview.</span>
+              </div>
+              <button type="submit" class="btn-submit-booking">
+                🚀 Submit Demo Request
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Confirmation Modal -->
+  <div class="demo-modal-overlay" id="demo-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+    <div class="demo-modal-card">
+      <span class="modal-demo-badge">Demo Mode Simulation</span>
+      <h3 class="modal-header-title" id="modal-title">Demo Request Generated!</h3>
+      <p class="modal-header-desc">
+        Here is what the pet owner would see. <strong>Important:</strong> No real appointment has been booked and no customer data was saved.
+      </p>
+
+      <!-- Simulated Receipt Box -->
+      <div class="modal-receipt-box">
+        <div class="receipt-row">
+          <span class="receipt-label">Demo Reference:</span>
+          <span class="receipt-val" id="receipt-ref">DEMO-0000</span>
+        </div>
+        <div class="receipt-row">
+          <span class="receipt-label">Pet Details:</span>
+          <span class="receipt-val" id="receipt-pet">Bella</span>
+        </div>
+        <div class="receipt-row">
+          <span class="receipt-label">Requested Service:</span>
+          <span class="receipt-val" id="receipt-service">Complete Dog Grooming</span>
+        </div>
+        <div class="receipt-row">
+          <span class="receipt-label">Requested Date & Window:</span>
+          <span class="receipt-val" id="receipt-datetime">2026-11-01</span>
+        </div>
+        <div class="receipt-row">
+          <span class="receipt-label">Contact:</span>
+          <span class="receipt-val" id="receipt-owner">Guest</span>
+        </div>
+        <div class="receipt-row">
+          <span class="receipt-label">Estimated Total:</span>
+          <span class="receipt-val" id="receipt-total">€55</span>
+        </div>
+      </div>
+
+      <!-- What Would Happen In Production -->
+      <div class="modal-checklist-box">
+        <h5>What a Real Production Booking Would Do:</h5>
+        <ul>
+          <li>Save the customer record securely in a database (e.g. Supabase, PostgreSQL).</li>
+          <li>Check real-time groomer calendar availability (e.g. Google Calendar API).</li>
+          <li>Send an instant confirmation email / SMS to both the pet owner and the salon.</li>
+          <li>Optionally charge a deposit via Estonian bank link or Stripe.</li>
+        </ul>
+      </div>
+
+      <button type="button" class="btn-close-modal" id="btn-close-modal">
+        Close Preview & Try Another
+      </button>
+    </div>
+  </div>
+
+  <!-- Why PawRoute Section -->
+  <section class="section-pad-alt" id="why-us">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Our Care Philosophy</span>
+        <h2 class="section-title">Why Pet Owners Trust PawRoute</h2>
+        <p class="section-subtitle">
+          Crafted with care, patience, and high standards in Tallinn.
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <span class="pillar-icon">💚</span>
+          <h4 class="pillar-title">Fear-Free Certified</h4>
+          <p class="pillar-desc">We never rush. If your pet needs a cuddle, playtime, or rest break, they get it.</p>
+        </div>
+        <div class="pillar-card">
+          <span class="pillar-icon">🧴</span>
+          <h4 class="pillar-title">Organic & Pure</h4>
+          <p class="pillar-desc">Only paraben-free, hypoallergenic shampoos designed for northern winter and summer coats.</p>
+        </div>
+        <div class="pillar-card">
+          <span class="pillar-icon">🛁</span>
+          <h4 class="pillar-title">Sanitized Daily</h4>
+          <p class="pillar-desc">Medical-grade sterilization for all scissors, blades, tubs, and grooming tables after every visit.</p>
+        </div>
+        <div class="pillar-card">
+          <span class="pillar-icon">💶</span>
+          <h4 class="pillar-title">Transparent Estonian Rates</h4>
+          <p class="pillar-desc">No surprise charges. Prices are clearly listed in Euros with straightforward service tiers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section-pad" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Got Questions?</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Everything you need to know about our salon services and updating the website.
+        </p>
+      </div>
+
+      <div class="faq-wrap" id="faq-accordion">
+        <!-- FAQ items populated via app.js from data/services.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Location Section -->
+  <section class="section-pad-alt" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Visit Our Salon</span>
+        <h2 class="section-title">Location & Contact</h2>
+        <p class="section-subtitle">
+          Conveniently located in Tallinn, Estonia. Drop by or reach out with any questions.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info Card -->
+        <div class="contact-info-card">
+          <h3>Salon Information</h3>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-icon">📍</span>
+              <div class="contact-detail">
+                <h5>Address (Estonia)</h5>
+                <p class="js-salon-address">[Tornimäe 5, Kesklinn, Tallinn 10145, Estonia]</p>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon">📞</span>
+              <div class="contact-detail">
+                <h5>Phone & SMS</h5>
+                <p><a href="tel:+37251234567" class="js-salon-phone">[+372 5123 4567]</a></p>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon">✉️</span>
+              <div class="contact-detail">
+                <h5>Email Inquiries</h5>
+                <p><a href="mailto:tere@pawroute.ee" class="js-salon-email">[tere@pawroute.ee]</a></p>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon">🕒</span>
+              <div class="contact-detail">
+                <h5>Opening Hours</h5>
+                <p class="js-salon-hours">Mon – Sat: 09:00 – 18:00 (Sun: Closed)</p>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon">🏢</span>
+              <div class="contact-detail">
+                <h5>Business Registration</h5>
+                <p class="js-salon-reg">[Reg: 12345678 - Placeholder]</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Location Map Card -->
+        <div class="contact-map-card">
+          <h3>Find Us in Tallinn</h3>
+          <div class="map-placeholder-box">
+            <span class="map-icon">🗺️</span>
+            <p><strong>[Interactive Map Placeholder]</strong></p>
+            <p style="font-size: 0.8rem; color: var(--text-light);">
+              Central Tallinn Location • 5 minutes from Viru Keskus • Customer parking available in courtyard
+            </p>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+            🅿️ Free 30-minute drop-off parking is available directly in front of the salon for quick drop-offs and pick-ups.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span>🐾</span> PawRoute
+          </div>
+          <p>
+            Gentle, personalized pet grooming tailored for Estonian dogs and cats. Treating your pets like family since 2026.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Services & Pricing</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#why-us">Care Promise</a></li>
+            <li><a href="#booking">Demo Booking</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Information</h4>
+          <ul class="footer-links">
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Location & Hours</a></li>
+            <li><a href="data/services.js">Edit Services File</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Easy Maintenance</h4>
+          <p style="font-size: 0.84rem; color: #A9BCB4; line-height: 1.5; margin-bottom: 12px;">
+            Update any price, phone number, or service in <code>data/services.js</code> in seconds.
+          </p>
+          <span class="footer-demo-tag">Currency: EUR (€) • Estonia</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 PawRoute Pet Grooming. All rights reserved. [Business Placeholder].
+        </div>
+        <div class="footer-demo-tag">
+          Prototype Version 1.0 (Demo Mode Only)
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- 1. Central Configuration & Services Data -->
+  <script src="data/services.js"></script>
+  <!-- 2. Main Site Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
