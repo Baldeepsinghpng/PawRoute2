@@ -1,4 +1,4 @@
-# 🐾 PawRoute — Pet Grooming Website (Version 1.0)
+# PawRoute2 — Pet Grooming Website (Version 1.0)
 
 PawRoute is a clean, modern, and mobile-friendly online pet grooming website tailored for Estonia with pricing displayed in Euros (€).
 
