@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Demo Appointment | PawRoute Tallinn</title>
+  <meta name="description" content="Request a fear-free grooming appointment for your dog or cat at PawRoute Pet Salon in Tallinn, Estonia.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=2.1">
+</head>
+<body>
+
+  <!-- Top Demo Banner -->
+  <div class="demo-top-bar" role="status">
+    <div class="container">
+      <span>🐾 <strong>Interactive Demo Active</strong> — This booking form runs in simulation mode. Submissions generate an instant demo receipt preview without storing data.</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="nav-wrap" aria-label="Main Navigation">
+        <a href="index.html" class="logo" aria-label="PawRoute Homepage">
+          <div class="logo-icon" aria-hidden="true">🐾</div>
+          <div class="logo-text">
+            PawRoute<span>.ee</span>
+            <small class="logo-subline">Adopt & Care • Tallinn</small>
+          </div>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="adopt.html">Find Pets</a></li>
+          <li><a href="favourites.html">Favourites</a></li>
+          <li><a href="services.html">Grooming & Spa</a></li>
+          <li><a href="about.html">About & FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="favourites.html" class="nav-fav-btn" id="nav-fav-btn" aria-label="View saved favourite pets">
+            <span class="nav-fav-icon" aria-hidden="true">❤️</span>
+            <span class="nav-fav-text">Favourites</span>
+            <span class="nav-fav-badge" id="nav-fav-count">0</span>
+          </a>
+          <a href="services.html" class="nav-cta-btn">View Services</a>
+          <button type="button" class="mobile-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> <span>/</span> <a href="services.html">Grooming</a> <span>/</span> <span class="current">Book Appointment</span>
+      </div>
+      <div class="page-hero-tag">
+        <span>📅</span> Interactive Appointment Simulation
+      </div>
+      <h1 class="page-hero-title">Schedule a Gentle Grooming Visit</h1>
+      <p class="page-hero-subtitle">
+        Select a grooming package, preferred time window, and let us know any special care instructions for your pet.
+      </p>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="booking-section-wrapper">
+        <!-- Prominent Demo Disclaimer Banner -->
+        <div class="booking-disclaimer-banner">
+          <div class="booking-disclaimer-icon">⚠️</div>
+          <div class="booking-disclaimer-text">
+            <h4>DEMO BOOKING MODE ONLY</h4>
+            <p>
+              This is a prototype form for evaluation. <strong>No real customer data is saved</strong>, no payment is collected, and submitting will <strong>not</strong> schedule a live appointment.
+            </p>
+          </div>
+        </div>
+
+        <!-- Booking Form -->
+        <div class="booking-form-body">
+          <form id="demo-booking-form">
+            <div class="form-layout-grid">
+              
+              <!-- 1. Pet Species -->
+              <div class="form-group form-full-width">
+                <label>1. Pet Type <span class="hint">Select dog or cat</span></label>
+                <div class="species-selector">
+                  <label class="species-chip">
+                    <input type="radio" name="pet-species" value="Dog" checked>
+                    <span>🐕 Dog</span>
+                  </label>
+                  <label class="species-chip">
+                    <input type="radio" name="pet-species" value="Cat">
+                    <span>🐈 Cat</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- 2. Pet Name -->
+              <div class="form-group">
+                <label for="pet-name">2. Pet Name * <span class="hint">e.g. Bella</span></label>
+                <input type="text" id="pet-name" class="form-input" placeholder="e.g. Bella" required>
+              </div>
+
+              <!-- 3. Breed / Size -->
+              <div class="form-group">
+                <label for="pet-breed">3. Breed or Size <span class="hint">e.g. Golden Retriever (25kg)</span></label>
+                <input type="text" id="pet-breed" class="form-input" placeholder="e.g. French Bulldog (12kg)">
+              </div>
+
+              <!-- 4. Service Selection -->
+              <div class="form-group form-full-width">
+                <label for="booking-service">4. Select Grooming Service * <span class="hint">Prices shown in EUR (€)</span></label>
+                <select id="booking-service" class="form-select" required>
+                  <option value="">Loading services from data/services.js...</option>
+                </select>
+              </div>
+
+              <!-- 5. Preferred Date -->
+              <div class="form-group">
+                <label for="booking-date">5. Preferred Date * <span class="hint">Mon–Sat</span></label>
+                <input type="date" id="booking-date" class="form-input" required>
+              </div>
+
+              <!-- 6. Preferred Time Window -->
+              <div class="form-group">
+                <label for="booking-time">6. Preferred Time Window *</label>
+                <select id="booking-time" class="form-select" required>
+                  <option value="Morning (09:00 - 12:00)">Morning (09:00 – 12:00)</option>
+                  <option value="Afternoon (12:00 - 15:00)">Afternoon (12:00 – 15:00)</option>
+                  <option value="Late Afternoon (15:00 - 18:00)">Late Afternoon (15:00 – 18:00)</option>
+                  <option value="Flexible / Any Time">Flexible / Any time</option>
+                </select>
+              </div>
+
+              <!-- 7. Owner Name -->
+              <div class="form-group">
+                <label for="owner-name">7. Your Full Name *</label>
+                <input type="text" id="owner-name" class="form-input" placeholder="e.g. Laura Tamm" required>
+              </div>
+
+              <!-- 8. Owner Phone -->
+              <div class="form-group">
+                <label for="owner-phone">8. Phone Number * <span class="hint">Estonian format (+372)</span></label>
+                <input type="tel" id="owner-phone" class="form-input" placeholder="+372 5XXX XXXX" required>
+              </div>
+
+              <!-- 9. Special Notes -->
+              <div class="form-group form-full-width">
+                <label for="booking-notes">9. Special Care Notes <span class="hint">Matted hair, sensitive skin, nervous temperament, etc.</span></label>
+                <textarea id="booking-notes" class="form-textarea" placeholder="Tell us anything that will help make your pet comfortable..."></textarea>
+              </div>
+
+            </div>
+
+            <!-- Footer Actions -->
+            <div class="form-footer-actions">
+              <div class="form-security-note">
+                🔒 <span>Interactive demonstration — inputs generate an instant visual demo receipt.</span>
+              </div>
+              <button type="submit" class="btn-submit-booking">
+                🚀 Submit Demo Request
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Grooming Confirmation Modal -->
+  <div class="demo-modal-overlay" id="demo-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+    <div class="demo-modal-card">
+      <span class="modal-demo-badge">Demo Mode Simulation</span>
+      <h3 class="modal-header-title" id="modal-title">Demo Request Generated!</h3>
+      <p class="modal-header-desc">
+        Here is what the pet owner would see. <strong>Important:</strong> No real appointment has been booked and no customer data was saved.
+      </p>
+
+      <div class="modal-receipt-box">
+        <div class="receipt-row">
+          <span class="receipt-label">Demo Reference:</span>
+          <span class="receipt-val" id="receipt-ref">DEMO-0000</span>
+        </div>
+        <div class="receipt-row">
+          <span class="receipt-label">Pet Details:</span>
+          <span class="receipt-val" id="receipt-pet">Bella</span>
+        </div>
+        <div class="receipt-row">
+          <span class="receipt-label">Requested Service:</span>
+          <span class="receipt-val" id="receipt-service">Complete Dog Grooming</span>
+        </div>
+        <div class="receipt-row">
+          <span class="receipt-label">Requested Date & Window:</span>
+          <span class="receipt-val" id="receipt-datetime">2026-11-01</span>
+        </div>
+        <div class="receipt-row">
+          <span class="receipt-label">Contact:</span>
+          <span class="receipt-val" id="receipt-owner">Guest</span>
+        </div>
+        <div class="receipt-row">
+          <span class="receipt-label">Estimated Total:</span>
+          <span class="receipt-val" id="receipt-total">€55</span>
+        </div>
+      </div>
+
+      <div class="modal-checklist-box">
+        <h5>What a Real Production Booking Would Do:</h5>
+        <ul>
+          <li>Save the customer record securely in a database (e.g. Supabase, PostgreSQL).</li>
+          <li>Check real-time groomer calendar availability (e.g. Google Calendar API).</li>
+          <li>Send an instant confirmation email / SMS to both the pet owner and the salon.</li>
+          <li>Optionally charge a deposit via Estonian bank link or Stripe.</li>
+        </ul>
+      </div>
+
+      <button type="button" class="btn-close-modal" id="btn-close-modal">
+        Close Preview & Try Another
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo"><span>🐾</span> PawRoute</div>
+          <p>Gentle pet grooming, ethical adoption discovery, and lifetime wellness for dogs, cats, and small pets in Estonia.</p>
+          <div class="footer-badge-list">
+            <span class="footer-mini-badge">🇪🇪 Tallinn, Estonia</span>
+            <span class="footer-mini-badge">EUR (€)</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Adopt a Companion</h4>
+          <ul class="footer-links">
+            <li><a href="adopt.html">Browse Adoptable Pets</a></li>
+            <li><a href="favourites.html">My Saved Favourites</a></li>
+            <li><a href="about.html">Adoption Process</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Grooming & Salon</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Services & Pricing</a></li>
+            <li><a href="booking.html">Demo Appointment Form</a></li>
+            <li><a href="about.html">Care Promise & FAQ</a></li>
+            <li><a href="contact.html">Location & Hours</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Website Information</h4>
+          <p style="font-size: 0.84rem; color: #A9BCB4; line-height: 1.5; margin-bottom: 12px;">
+            Update pets in <code>data/pets.js</code> and grooming packages in <code>data/services.js</code> in plain English.
+          </p>
+          <span class="footer-demo-tag">Prototype Version 2.1 (Multi-Page Experience)</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 PawRoute Pet Grooming & Adoption. All rights reserved. [Business Placeholder].</div>
+        <div class="footer-demo-tag">Interactive Simulation Only — No Real Legal Adoptions or Transactions Processed</div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="data/services.js?v=2.1"></script>
+  <script src="data/pets.js?v=2.1"></script>
+  <script src="app.js?v=2.1"></script>
+</body>
+</html>

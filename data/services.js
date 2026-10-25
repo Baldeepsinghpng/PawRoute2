@@ -155,29 +155,40 @@ const PAWROUTE_CONFIG = {
   // Frequently Asked Questions
   faqs: [
     {
+      question: "How does the pet adoption process work at PawRoute?",
+      answer: "Browse our adoptable pets online, save your favourites, and click 'Meet Pet' to submit a demo adoption inquiry. In a real-world flow, our partner shelters review your lifestyle fit, organize a 1-on-1 meet-and-greet in Tallinn, and transfer the Estonian microchip registration."
+    },
+    {
+      question: "What is included in the pet adoption fee?",
+      answer: "The modest adoption fee (€40–€70) directly covers comprehensive veterinary health examinations, up-to-date vaccinations, microchipping, an EU Pet Passport, internal/external parasite treatment, and spaying/neutering for adult animals."
+    },
+    {
       question: "Where in Estonia is PawRoute located?",
-      answer: "We are located centrally in Tallinn at [Tornimäe 5, Kesklinn, Tallinn 10145], with convenient parking and access to public transit."
+      answer: "Our central hub and pet wellness salon is located in Tallinn at Tornimäe 5, Kesklinn, Tallinn 10145, with convenient parking and rapid access to public transit."
     },
     {
       question: "Are your grooming products safe for sensitive skin?",
-      answer: "Yes, we exclusively use natural, certified hypoallergenic, cruelty-free shampoos and balms suited to Nordic seasonal weather."
+      answer: "Yes, we exclusively use natural, certified hypoallergenic, cruelty-free shampoos and balms specially formulated for Nordic winter and summer coat conditions."
     },
     {
       question: "How long does a typical grooming session take?",
-      answer: "A standard dog grooming session takes between 60 and 120 minutes depending on pet size, coat condition, and chosen service."
+      answer: "A standard grooming session takes between 60 and 120 minutes depending on pet size, coat condition, and chosen service."
     },
     {
-      question: "Is this booking form confirmed immediately?",
-      answer: "Currently, this online portal is running in Demo Mode. Submissions are for demonstration purposes and do not store customer records or charge payments."
+      question: "Is this website running real adoptions and bookings?",
+      answer: "Currently, PawRoute is running in Demo Mode. Adoption inquiries and salon appointments generate instant simulation receipts so you can evaluate the experience without storing personal data or charging cards."
     },
     {
-      question: "How do I update services and prices?",
-      answer: "Services and prices are configured in one central file: 'data/services.js'. Anyone can open this file and change prices or service names in plain text!"
+      question: "How do I add new adoptable pets or update grooming prices?",
+      answer: "Everything is organized into simple data files: open 'data/pets.js' to add or edit pets, and open 'data/services.js' to change salon prices or contact details in plain English!"
     }
   ]
 };
 
-// Export for modern module environments or make available globally in browser
+// Make available globally on window and export for module environments
+if (typeof window !== "undefined") {
+  window.PAWROUTE_CONFIG = PAWROUTE_CONFIG;
+}
 if (typeof module !== "undefined" && module.exports) {
   module.exports = PAWROUTE_CONFIG;
 }

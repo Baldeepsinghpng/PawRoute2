@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grooming & Spa Packages | PawRoute Tallinn</title>
+  <meta name="description" content="Transparent pet grooming packages in Euros (€) in Tallinn, Estonia. Gentle, fear-free care for dogs and cats.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=2.1">
+</head>
+<body>
+
+  <!-- Top Demo Banner -->
+  <div class="demo-top-bar" role="status">
+    <div class="container">
+      <span>🐾 <strong>Interactive Demo Active</strong> — This is a portfolio prototype. All grooming bookings and adoption requests are interactive simulations.</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="nav-wrap" aria-label="Main Navigation">
+        <a href="index.html" class="logo" aria-label="PawRoute Homepage">
+          <div class="logo-icon" aria-hidden="true">🐾</div>
+          <div class="logo-text">
+            PawRoute<span>.ee</span>
+            <small class="logo-subline">Adopt & Care • Tallinn</small>
+          </div>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="adopt.html">Find Pets</a></li>
+          <li><a href="favourites.html">Favourites</a></li>
+          <li><a href="services.html" class="active">Grooming & Spa</a></li>
+          <li><a href="about.html">About & FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="favourites.html" class="nav-fav-btn" id="nav-fav-btn" aria-label="View saved favourite pets">
+            <span class="nav-fav-icon" aria-hidden="true">❤️</span>
+            <span class="nav-fav-text">Favourites</span>
+            <span class="nav-fav-badge" id="nav-fav-count">0</span>
+          </a>
+          <a href="booking.html" class="nav-cta-btn">Book Demo</a>
+          <button type="button" class="mobile-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> <span>/</span> <span class="current">Grooming & Spa</span>
+      </div>
+      <div class="page-hero-tag">
+        <span>🧴</span> Nordic Wellness Care
+      </div>
+      <h1 class="page-hero-title">Salon Packages & Transparent Pricing</h1>
+      <p class="page-hero-subtitle">
+        All prices are clearly stated in <strong>Euros (€)</strong> with no hidden extras. From full scissor styling to soothing oatmeal hydrobaths.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section-pad">
+    <div class="container">
+      <!-- Filter Bar -->
+      <div class="services-filter-bar" role="tablist" aria-label="Grooming categories">
+        <button type="button" class="filter-btn active" data-category="all">All Services</button>
+        <button type="button" class="filter-btn" data-category="dogs">Dogs Only 🐕</button>
+        <button type="button" class="filter-btn" data-category="cats">Cats Only 🐈</button>
+        <button type="button" class="filter-btn" data-category="addons">Add-Ons & Spa 🛁</button>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="services-grid" id="services-grid">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <!-- Update Tip Box -->
+      <div class="update-tip-box">
+        <div class="update-tip-text">
+          💡 <strong>Want to update salon prices or add a service?</strong> Simply open <code>data/services.js</code> and edit numbers and names in plain English. No code knowledge needed!
+        </div>
+        <a href="about.html#faq" style="font-size: 0.85rem; font-weight: 700; color: var(--color-accent);">Read Grooming FAQ →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo"><span>🐾</span> PawRoute</div>
+          <p>Gentle pet grooming, ethical adoption discovery, and lifetime wellness for dogs, cats, and small pets in Estonia.</p>
+          <div class="footer-badge-list">
+            <span class="footer-mini-badge">🇪🇪 Tallinn, Estonia</span>
+            <span class="footer-mini-badge">EUR (€)</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Adopt a Companion</h4>
+          <ul class="footer-links">
+            <li><a href="adopt.html">Browse Adoptable Pets</a></li>
+            <li><a href="favourites.html">My Saved Favourites</a></li>
+            <li><a href="about.html">Adoption Process</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Grooming & Salon</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Services & Pricing</a></li>
+            <li><a href="booking.html">Demo Appointment Form</a></li>
+            <li><a href="about.html">Care Promise & FAQ</a></li>
+            <li><a href="contact.html">Location & Hours</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Website Information</h4>
+          <p style="font-size: 0.84rem; color: #A9BCB4; line-height: 1.5; margin-bottom: 12px;">
+            Update pets in <code>data/pets.js</code> and grooming packages in <code>data/services.js</code> in plain English.
+          </p>
+          <span class="footer-demo-tag">Prototype Version 2.1 (Multi-Page Experience)</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 PawRoute Pet Grooming & Adoption. All rights reserved. [Business Placeholder].</div>
+        <div class="footer-demo-tag">Interactive Simulation Only — No Real Legal Adoptions or Transactions Processed</div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="data/services.js?v=2.1"></script>
+  <script src="data/pets.js?v=2.1"></script>
+  <script src="app.js?v=2.1"></script>
+</body>
+</html>
