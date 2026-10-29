@@ -1,447 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PawRoute | Pet Discovery, Ethical Adoption & Gentle Grooming in Estonia</title>
-  <meta name="description" content="PawRoute is Estonia's premier pet discovery, ethical adoption, and gentle grooming portal in Tallinn. Browse vetted rescue dogs, cats, and small pets.">
-  
-  <!-- Google Fonts: Plus Jakarta Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Site Stylesheet -->
-  <link rel="stylesheet" href="styles.css?v=2.1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PawRoute — Smart routes for mobile pet groomers</title>
+<meta name="description" content="PawRoute plans the perfect day for mobile pet groomers: fewer kilometres, more dogs, happier clients.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Top Demo Banner -->
-  <div class="demo-top-bar" role="status">
-    <div class="container">
-      <span>🐾 <strong>Interactive Demo Active</strong> — This is an interactive prototype for pet discovery, adoption matching & grooming in Estonia. All adoption requests and salon bookings are simulations.</span>
+<header class="hero"><div class="wrap hero-grid">
+  <div>
+    <span class="eyebrow rv"><b></b> Now taking early-access groomers</span>
+    <h1 class="rv d1">Your van. Your dogs.<br><span class="grad">Zero wasted miles.</span></h1>
+    <p class="lead rv d2">PawRoute builds the smartest daily route for mobile groomers, then keeps clients informed, reminded and rebooked. Built for people who
+      <span class="grad" style="font-weight:600"><span id="typed" data-words='["drive to doggos.","groom for a living.","hate traffic.","love clean paws."]'></span><span class="caret"></span></span></p>
+    <div class="cta-row rv d3">
+      <a href="contact.html" class="btn">Join the waitlist →</a>
+      <a href="routes.html" class="btn ghost">▶ Try the Route Lab</a>
     </div>
   </div>
-
-  <!-- Site Header -->
-  <header class="site-header" id="site-header">
-    <div class="container">
-      <nav class="nav-wrap" aria-label="Main Navigation">
-        <!-- Logo -->
-        <a href="index.html" class="logo" aria-label="PawRoute Homepage">
-          <div class="logo-icon" aria-hidden="true">🐾</div>
-          <div class="logo-text">
-            PawRoute<span>.ee</span>
-            <small class="logo-subline">Adopt & Care • Tallinn</small>
-          </div>
-        </a>
-
-        <!-- Desktop Navigation Links -->
-        <ul class="nav-links" id="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="adopt.html">Find Pets</a></li>
-          <li><a href="favourites.html">Favourites</a></li>
-          <li><a href="services.html">Grooming & Spa</a></li>
-          <li><a href="about.html">About & FAQ</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-        <!-- Right Header Actions -->
-        <div class="header-actions">
-          <a href="favourites.html" class="nav-fav-btn" id="nav-fav-btn" aria-label="View saved favourite pets">
-            <span class="nav-fav-icon" aria-hidden="true">❤️</span>
-            <span class="nav-fav-text">Favourites</span>
-            <span class="nav-fav-badge" id="nav-fav-count">0</span>
-          </a>
-
-          <a href="adopt.html" class="nav-cta-btn">Adopt a Pet</a>
-
-          <button type="button" class="mobile-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
-            ☰
-          </button>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero-section" id="hero">
-    <div class="container">
-      <div class="hero-grid">
-        <!-- Left Hero Content -->
-        <div class="hero-content">
-          <div class="hero-tag">
-            <span class="flag-icon" aria-hidden="true">🇪🇪</span> Estonia's Ethical Pet Discovery & Wellness Hub
-          </div>
-          <h1 class="hero-title">Find Your Forever Friend. <em>Cherish Them for Life.</em></h1>
-          <p class="hero-subtitle">
-            Compassionate pet adoption and gentle, fear-free grooming under one roof in Tallinn. Browse vetted rescue dogs, cats, and small pets waiting for a loving home across Estonia.
-          </p>
-
-          <div class="hero-actions">
-            <a href="adopt.html" class="btn-primary">
-              <span>🐾 Browse Adoptable Pets</span>
-            </a>
-            <a href="services.html" class="btn-secondary">
-              <span>🧼 View Grooming Spa</span>
-            </a>
-          </div>
-
-          <!-- Hero Highlights / Trust Stats -->
-          <div class="hero-stats">
-            <div class="stat-item">
-              <h4>12+</h4>
-              <p>Adoptable companions</p>
-            </div>
-            <div class="stat-item">
-              <h4>100%</h4>
-              <p>Vet-checked & chipped</p>
-            </div>
-            <div class="stat-item">
-              <h4>Tallinn</h4>
-              <p>Central salon & partner hub</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Hero Visual Card: Featured Pet of the Week -->
-        <div class="hero-visual">
-          <div class="hero-visual-card featured-hero-card" id="featured-hero-card">
-            <div class="featured-ribbon">⭐ Pet of the Week</div>
-            <div class="hero-pet-image-wrap">
-              <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=80" alt="Luna - Golden Retriever Mix" class="hero-pet-img" id="hero-pet-img" loading="eager">
-              <span class="hero-pet-badge" id="hero-pet-status">🟢 Available for Adoption</span>
-              <button type="button" class="hero-fav-btn card-fav-btn" id="hero-pet-fav-btn" aria-label="Save Luna to favourites" data-pet-id="pet-luna-golden">
-                <span class="heart-icon">🤍</span>
-              </button>
-            </div>
-
-            <div class="hero-pet-info">
-              <div class="hero-pet-meta">
-                <div>
-                  <h3 class="hero-pet-name" id="hero-pet-name">Luna</h3>
-                  <p class="hero-pet-sub" id="hero-pet-sub">Golden Retriever Mix • 2 years • Female</p>
-                </div>
-                <div class="hero-pet-location">📍 Tallinn, EE</div>
-              </div>
-
-              <p class="hero-pet-snippet" id="hero-pet-snippet">
-                "Gentle soul with a heart of gold. Loves seaside walks in Pirita, belly rubs, and playing fetch. Wonderful with children."
-              </p>
-
-              <div class="hero-pet-tags" id="hero-pet-tags">
-                <span class="pill-tag">Gentle</span>
-                <span class="pill-tag">Kid-Friendly</span>
-                <span class="pill-tag">Leash Trained</span>
-              </div>
-
-              <div class="hero-pet-action-row">
-                <button type="button" class="btn-meet-pet" id="hero-meet-btn" data-pet-id="pet-luna-golden">
-                  Meet Luna →
-                </button>
-                <div class="hero-fee-note">
-                  <span>Adoption fee: <strong>€65</strong></span>
-                  <small>incl. EU passport & chip</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section: Featured Adoptable Pets Spotlight -->
-  <section class="section-pad">
-    <div class="container">
-      <div class="home-section-head-split">
-        <div class="section-head-text">
-          <span class="section-tag">Featured Rescues</span>
-          <h2 class="section-title">Companions Waiting for a Home</h2>
-          <p class="section-subtitle">
-            Every rescue is vet-checked, microchipped, vaccinated, and socialized. Browse our featured companions below or view the full catalog.
-          </p>
-        </div>
-        <a href="adopt.html" class="btn-view-all-link">
-          Browse All 12 Pets →
-        </a>
-      </div>
-
-      <!-- Spotlight Pet Grid (Rendered by JS) -->
-      <div class="pets-grid" id="home-spotlight-grid">
-        <!-- Rendered by app.js -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Section: Grooming & Wellness Highlights -->
-  <section class="section-pad-alt">
-    <div class="container">
-      <div class="home-section-head-split">
-        <div class="section-head-text">
-          <span class="section-tag">Fear-Free Salon Care</span>
-          <h2 class="section-title">Gentle Grooming Packages</h2>
-          <p class="section-subtitle">
-            Transparent pricing in Euros (€). From breed haircuts to hypoallergenic hydrobaths, we keep every pet relaxed and healthy.
-          </p>
-        </div>
-        <a href="services.html" class="btn-view-all-link">
-          View All Packages & Prices →
-        </a>
-      </div>
-
-      <!-- Spotlight Services Grid (Rendered by JS) -->
-      <div class="services-grid" id="home-services-grid">
-        <!-- Rendered by app.js -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Section: How PawRoute Works -->
-  <section class="section-pad">
-    <div class="container">
-      <div class="section-head">
-        <span class="section-tag">Stress-Free Process</span>
-        <h2 class="section-title">How PawRoute Works</h2>
-        <p class="section-subtitle">
-          From finding your match to caring for their coat for years to come — here is our straightforward process.
-        </p>
-      </div>
-
-      <div class="steps-grid">
-        <div class="step-card">
-          <div class="step-number">1</div>
-          <div class="step-icon">🔎</div>
-          <h3 class="step-title">Discover & Match</h3>
-          <p class="step-desc">
-            Browse verified pet profiles, filter by lifestyle and home environment, and save your favourite candidates with one click.
-          </p>
-        </div>
-
-        <div class="step-card">
-          <div class="step-number">2</div>
-          <div class="step-icon">📋</div>
-          <h3 class="step-title">Submit Inquiry</h3>
-          <p class="step-desc">
-            Fill out a simple matching questionnaire. In production, our shelter coordinators review your home setup within 48 hours.
-          </p>
-        </div>
-
-        <div class="step-card">
-          <div class="step-number">3</div>
-          <div class="step-icon">🤝</div>
-          <h3 class="step-title">Meet & Greet</h3>
-          <p class="step-desc">
-            Schedule a calm 1-on-1 visit at our Tallinn partner facility to spend time together and ensure a perfect personality bond.
-          </p>
-        </div>
-
-        <div class="step-card">
-          <div class="step-number">4</div>
-          <div class="step-icon">🏡</div>
-          <h3 class="step-title">Welcome Home & Care</h3>
-          <p class="step-desc">
-            Finalize adoption with an EU passport & microchip transfer, then book fear-free grooming checkups to keep them happy!
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section: Trust Pillars -->
-  <section class="section-pad-alt">
-    <div class="container">
-      <div class="section-head">
-        <span class="section-tag">Our Care Philosophy</span>
-        <h2 class="section-title">Why Pet Owners Trust PawRoute</h2>
-        <p class="section-subtitle">
-          Ethical rehoming standards and fear-free grooming crafted with high Nordic care in Tallinn.
-        </p>
-      </div>
-
-      <div class="pillars-grid">
-        <div class="pillar-card">
-          <span class="pillar-icon">💚</span>
-          <h4 class="pillar-title">Fear-Free Certified</h4>
-          <p class="pillar-desc">We never rush. Whether acclimatizing a rescue pet or grooming a sensitive senior, patience comes first.</p>
-        </div>
-        <div class="pillar-card">
-          <span class="pillar-icon">🧴</span>
-          <h4 class="pillar-title">Organic & Pure Shampoos</h4>
-          <p class="pillar-desc">Only paraben-free, hypoallergenic botanical balms designed for harsh northern winter and summer coat changes.</p>
-        </div>
-        <div class="pillar-card">
-          <span class="pillar-icon">🤝</span>
-          <h4 class="pillar-title">Ethical Rescue Network</h4>
-          <p class="pillar-desc">Partnered with trusted Estonian shelters across Harju County to ensure transparent medical records and loving placements.</p>
-        </div>
-        <div class="pillar-card">
-          <span class="pillar-icon">💶</span>
-          <h4 class="pillar-title">Transparent Estonian Rates</h4>
-          <p class="pillar-desc">No hidden fees. Every service package and adoption contribution is clearly stated in Euros (€).</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Site Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <div class="footer-logo">
-            <span>🐾</span> PawRoute
-          </div>
-          <p>
-            Gentle pet grooming, ethical adoption discovery, and lifetime wellness for dogs, cats, and small pets in Estonia.
-          </p>
-          <div class="footer-badge-list">
-            <span class="footer-mini-badge">🇪🇪 Tallinn, Estonia</span>
-            <span class="footer-mini-badge">EUR (€)</span>
-          </div>
-        </div>
-
-        <div class="footer-col">
-          <h4>Adopt a Companion</h4>
-          <ul class="footer-links">
-            <li><a href="adopt.html">Browse Adoptable Pets</a></li>
-            <li><a href="favourites.html">My Saved Favourites</a></li>
-            <li><a href="about.html#adoption-process">Adoption Guidelines</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Grooming & Salon</h4>
-          <ul class="footer-links">
-            <li><a href="services.html">Services & Pricing</a></li>
-            <li><a href="booking.html">Demo Appointment Form</a></li>
-            <li><a href="about.html">Care Promise & FAQ</a></li>
-            <li><a href="contact.html">Location & Hours</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Website Information</h4>
-          <p style="font-size: 0.84rem; color: #A9BCB4; line-height: 1.5; margin-bottom: 12px;">
-            Open <code>data/pets.js</code> to add pets or <code>data/services.js</code> to edit grooming prices in plain English.
-          </p>
-          <span class="footer-demo-tag">Prototype Version 2.1 (Multi-Page Experience)</span>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div>
-          © 2026 PawRoute Pet Grooming & Adoption. All rights reserved. [Business Placeholder].
-        </div>
-        <div class="footer-demo-tag">
-          Interactive Simulation Only — No Real Legal Adoptions or Transactions Processed
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Pet Detail Modal -->
-  <div class="pet-modal-overlay" id="pet-detail-modal" role="dialog" aria-modal="true" aria-labelledby="pet-modal-title" tabindex="-1">
-    <div class="pet-modal-card">
-      <button type="button" class="modal-close-btn" id="btn-close-pet-modal" aria-label="Close modal">✕</button>
-      <div class="pet-modal-body" id="pet-modal-content"></div>
-    </div>
+  <div class="demo rv d2">
+    <svg id="route-svg" viewBox="0 0 600 400" data-stops="8" aria-label="Animated route optimisation demo"></svg>
+    <div class="bar"><div id="demo-stats" style="display:flex;gap:8px;flex-wrap:wrap"></div><button class="btn" id="shuffle">🎲 New day</button></div>
   </div>
+</div></header>
 
-  <!-- Demo Adoption Application Modal -->
-  <div class="demo-modal-overlay" id="adoption-modal" role="dialog" aria-modal="true" aria-labelledby="adoption-modal-title" tabindex="-1">
-    <div class="demo-modal-card adoption-modal-card">
-      <button type="button" class="modal-close-btn" id="btn-close-adoption-modal" aria-label="Close modal">✕</button>
-      <div id="adoption-form-wrap">
-        <span class="modal-demo-badge">Interactive Demo Application</span>
-        <h3 class="modal-header-title" id="adoption-modal-title">Adopt <span id="adopt-modal-pet-name">Pet</span></h3>
-        <p class="modal-header-desc">
-          Test our adoption inquiry simulation. Submitting renders a visual demonstration receipt.
-        </p>
+<div class="marquee"><div>
+  <span>🚐 Mobile groomers</span><span>✂️ Salons on wheels</span><span>🐕 Dog walkers</span><span>🐈 Cat sitters</span><span>🛁 Spa vans</span><span>📍 Smart routing</span><span>⏰ Auto reminders</span><span>💬 Client updates</span>
+  <span>🚐 Mobile groomers</span><span>✂️ Salons on wheels</span><span>🐕 Dog walkers</span><span>🐈 Cat sitters</span><span>🛁 Spa vans</span><span>📍 Smart routing</span><span>⏰ Auto reminders</span><span>💬 Client updates</span>
+</div></div>
 
-        <div class="adopt-pet-strip" id="adopt-pet-strip">
-          <img src="" alt="" id="adopt-strip-img" class="adopt-strip-img">
-          <div>
-            <h4 id="adopt-strip-name">Pet Name</h4>
-            <p id="adopt-strip-details">Breed • Age • Location</p>
-            <span class="adopt-strip-fee" id="adopt-strip-fee">Adoption Fee: €65</span>
-          </div>
-        </div>
-
-        <form id="demo-adoption-form" class="adoption-form">
-          <input type="hidden" id="adopt-pet-id" value="">
-          <div class="form-layout-grid">
-            <div class="form-group">
-              <label for="adopt-applicant-name">Your Full Name *</label>
-              <input type="text" id="adopt-applicant-name" class="form-input" placeholder="e.g. Kaspar Mägi" required>
-            </div>
-            <div class="form-group">
-              <label for="adopt-applicant-phone">Phone Number * <span class="hint">(Estonian +372)</span></label>
-              <input type="tel" id="adopt-applicant-phone" class="form-input" placeholder="+372 5XXX XXXX" required>
-            </div>
-            <div class="form-group">
-              <label for="adopt-applicant-email">Email Address *</label>
-              <input type="email" id="adopt-applicant-email" class="form-input" placeholder="kaspar@example.ee" required>
-            </div>
-            <div class="form-group">
-              <label for="adopt-home-type">Housing Setup *</label>
-              <select id="adopt-home-type" class="form-select" required>
-                <option value="Apartment with Balcony">Apartment</option>
-                <option value="House with Fenced Yard">House with Fenced Yard</option>
-                <option value="House without Fence">House without Fence</option>
-                <option value="Rural / Farmstead">Rural / Farmstead</option>
-              </select>
-            </div>
-            <div class="form-group form-full-width">
-              <label for="adopt-experience">Experience with Pets *</label>
-              <select id="adopt-experience" class="form-select" required>
-                <option value="First-time pet owner">First-time pet parent</option>
-                <option value="Have owned pets before">Experienced pet parent</option>
-                <option value="Currently have pets in home">Current pet guardian</option>
-              </select>
-            </div>
-            <div class="form-group form-full-width">
-              <label for="adopt-applicant-notes">Tell us about your home & routine</label>
-              <textarea id="adopt-applicant-notes" class="form-textarea" placeholder="Hours pet will be alone, garden details, family members..."></textarea>
-            </div>
-          </div>
-          <div class="form-footer-actions">
-            <div class="form-security-note">🔒 <span>Interactive demonstration — inputs reset upon receipt preview.</span></div>
-            <button type="submit" class="btn-submit-booking">🚀 Submit Demo Application</button>
-          </div>
-        </form>
-      </div>
-
-      <div id="adoption-receipt-wrap" style="display: none;">
-        <span class="modal-demo-badge">Demo Mode Simulation</span>
-        <h3 class="modal-header-title">Adoption Inquiry Preview Generated!</h3>
-        <p class="modal-header-desc">Here is what the applicant and partner shelter would review in production:</p>
-        <div class="modal-receipt-box">
-          <div class="receipt-row"><span class="receipt-label">Application Ref:</span><span class="receipt-val" id="adopt-receipt-ref">ADOPT-EST-0000</span></div>
-          <div class="receipt-row"><span class="receipt-label">Chosen Pet:</span><span class="receipt-val" id="adopt-receipt-pet">Luna</span></div>
-          <div class="receipt-row"><span class="receipt-label">Applicant:</span><span class="receipt-val" id="adopt-receipt-applicant">Kaspar</span></div>
-          <div class="receipt-row"><span class="receipt-label">Housing:</span><span class="receipt-val" id="adopt-receipt-housing">Apartment</span></div>
-          <div class="receipt-row"><span class="receipt-label">Adoption Fee:</span><span class="receipt-val" id="adopt-receipt-fee">€65</span></div>
-        </div>
-        <div class="modal-checklist-box">
-          <h5>Next Steps in a Real Adoption Process:</h5>
-          <ul>
-            <li>Shelter team reviews lifestyle suitability within 48 hours.</li>
-            <li>1-on-1 Meet & Greet arranged at our Tallinn partner rescue facility.</li>
-            <li>Formal transfer of Estonian microchip registry and EU Pet Passport.</li>
-          </ul>
-        </div>
-        <button type="button" class="btn-close-modal" id="btn-close-adoption-receipt">Close Preview & Continue</button>
-      </div>
-    </div>
+<section><div class="wrap">
+  <div class="center rv"><h2>A day planner that <span class="grad">thinks like a groomer</span></h2>
+  <p class="lead">Grooming time, breed size, cancellations, lunch, fuel. PawRoute juggles it all so you just drive and groom.</p></div>
+  <div class="grid g3" style="margin-top:3.5rem">
+    <div class="card rv"><div class="ic">📍</div><h3>One-tap smart route</h3><p>Add today's appointments and watch the shortest, smartest order appear. Updates live when a client cancels.</p></div>
+    <div class="card rv d1"><div class="ic">⏱️</div><h3>Real grooming time</h3><p>A poodle is not a pug. Durations adapt per breed and per client, so ETAs are honest.</p></div>
+    <div class="card rv d2"><div class="ic">💬</div><h3>"I'm 10 minutes away"</h3><p>Automatic arrival messages and reminders cut no-shows and make you look like a big brand.</p></div>
   </div>
+  <p class="center rv" style="margin-top:2rem"><a href="features.html" class="btn ghost">See every feature →</a></p>
+</div></section>
 
-  <!-- Toast Notification Container -->
-  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+<section style="background:linear-gradient(180deg,transparent,rgba(139,92,246,.06),transparent)"><div class="wrap">
+  <div class="grid g4">
+    <div class="stat rv"><div class="num grad" data-count="27" data-suffix="%">0</div><p>fewer kilometres driven</p></div>
+    <div class="stat rv d1"><div class="num grad" data-count="2" data-suffix="+">0</div><p>extra dogs per day</p></div>
+    <div class="stat rv d2"><div class="num grad" data-count="60" data-suffix="%">0</div><p>fewer no-shows</p></div>
+    <div class="stat rv d3"><div class="num grad" data-count="5" data-suffix=" min">0</div><p>to plan a whole week</p></div>
+  </div>
+  <p class="center" style="color:var(--muted);font-size:.8rem;margin-top:1rem">Illustrative targets from our route simulations. Replace with real pilot data as soon as you have it.</p>
+</div></section>
 
-  <!-- Scripts -->
-  <script src="data/services.js?v=2.1"></script>
-  <script src="data/pets.js?v=2.1"></script>
-  <script src="app.js?v=2.1"></script>
+<section><div class="wrap grid g2" style="align-items:center">
+  <div class="rv"><h2>From chaos to <span class="grad">calm</span> in three steps</h2>
+    <div class="steps" style="margin-top:2rem">
+      <div class="step" data-n="1"><h3>Add your clients</h3><p style="color:var(--muted)">Import from a sheet or add as you go. Addresses, pets, notes.</p></div>
+      <div class="step" data-n="2"><h3>Pick the day</h3><p style="color:var(--muted)">PawRoute orders stops, adds breaks and shows your finish time.</p></div>
+      <div class="step" data-n="3"><h3>Drive and groom</h3><p style="color:var(--muted)">Clients get live updates. You get your evenings back.</p></div>
+    </div></div>
+  <div class="card rv d1 center" style="padding:3rem"><div style="font-size:5rem">🐩</div><h3>Ready when you are</h3><p>Early groomers get lifetime founder pricing.</p><br><a href="pricing.html" class="btn">See pricing</a></div>
+</div></section>
+
+<section><div class="wrap"><div class="band rv">
+  <h2>Stop driving in circles.</h2><p>Join the waitlist and be first to route smarter.</p><a href="contact.html" class="btn">Get early access 🐾</a>
+</div></div></section>
+
+<script src="script.js"></script>
 </body>
 </html>

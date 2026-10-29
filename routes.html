@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Route Lab — PawRoute</title>
+<meta name="description" content="Interactive route optimiser demo. Slide the number of stops and watch PawRoute find a shorter path.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="page-hero center"><div class="wrap">
+  <span class="eyebrow rv">Interactive demo</span>
+  <h1 class="rv d1" style="margin:1.2rem 0">The <span class="grad">Route Lab</span></h1>
+  <p class="lead rv d2">Real algorithm, running in your browser: nearest-neighbour start, then 2-opt refinement. The faint dashed line is the naive order; the glowing line is PawRoute.</p>
+</div></header>
+
+<section style="padding-top:30px"><div class="wrap">
+  <div class="demo rv">
+    <svg id="route-svg" viewBox="0 0 600 400" data-stops="10"></svg>
+    <div class="bar">
+      <div id="demo-stats" style="display:flex;gap:8px;flex-wrap:wrap"></div>
+      <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap">
+        <label style="margin:0">Stops: <b id="stops-val">10</b></label>
+        <input type="range" id="stops" min="3" max="12" value="10" style="width:160px">
+        <button class="btn" id="shuffle">🎲 Shuffle day</button>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="center rv"><h2>How it <span class="grad">thinks</span></h2></div>
+  <div class="grid g3" style="margin-top:2.5rem">
+    <div class="card rv"><div class="ic">1️⃣</div><h3>Greedy first pass</h3><p>From the van, always hop to the closest unvisited client. Quick, decent, and often a bit tangled.</p></div>
+    <div class="card rv d1"><div class="ic">2️⃣</div><h3>2-opt untangling</h3><p>Try reversing segments of the route. Whenever two crossing legs get shorter, keep the swap.</p></div>
+    <div class="card rv d2"><div class="ic">3️⃣</div><h3>Real-world rules</h3><p>The full product adds road times, appointment windows, breaks and breed durations on top.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap"><div class="card rv" id="calc" style="max-width:820px;margin:auto">
+  <h2 class="center">Savings <span class="grad">calculator</span></h2>
+  <div class="grid g2" style="gap:30px;align-items:center">
+    <div>
+      <label>Dogs per day: <b id="c-dogs-v"></b></label><input id="c-dogs" type="range" min="3" max="14" value="7">
+      <label>Daily driving (km): <b id="c-km-v"></b></label><input id="c-km" type="range" min="30" max="250" value="110">
+      <label>Average price per groom: <b id="c-price-v"></b></label><input id="c-price" type="range" min="25" max="120" value="55">
+    </div>
+    <div class="center">
+      <p style="color:var(--muted)">Possible extra monthly income</p><div class="out grad" id="o-rev">€0</div>
+      <p style="color:var(--muted);margin-top:1rem"><b id="o-hrs"></b> saved · <b id="o-dogs"></b> dogs / month</p>
+    </div>
+  </div>
+  <p style="color:var(--muted);font-size:.8rem;margin-top:1.4rem">Estimate based on a 27% distance reduction and rough fuel and time costs. Not a guarantee.</p>
+</div></div></section>
+<script src="script.js"></script>
+</body>
+</html>
